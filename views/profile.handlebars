@@ -1,0 +1,30 @@
+<div class="container-fluid d-flex flex-wrap justify-content-evenly p-4">
+  <!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
+  {{#with users as |user|}}
+  <div class="row w-100 p-4 ">
+    <div id="add" class="card p-0">
+      <div class="card-header card-header-custom text-white">
+        Profile
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+        <input type="hidden" name="friend-id" value="{{user.id}}" />
+        <input type="hidden" name="friendName" value="{{user.first_name}} {{user.last_name}}" />
+        <p class="card-text">This is user profile.</p>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{user.city}}, {{user.state}}</li>
+          <li class="list-group-item">{{user.fitness_level}}</li>
+          <li class="list-group-item">{{user.availability}}</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark">Add</button>
+      </div>
+    </div>
+  </div>
+  {{/with}}
+</div>
+<script src="/js/friend.js"></script>

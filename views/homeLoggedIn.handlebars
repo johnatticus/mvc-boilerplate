@@ -1,0 +1,41 @@
+<div class="container-fluid d-flex flex-wrap justify-content-evenly p-4">
+  {{#with users as |user|}}
+  <div class="row w-100 p-4">
+    <div class="card p-0">
+      <div class="card-body p-0">
+        <header class="header position-relative">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 pt-5">
+                <h1 class="xl-text mt-5">
+                  Welcome to {{user.first_name}}. <br /> Find your next
+                  <span class="text-success fw-bold replace-me">Friend, Partner, Buddy</span>
+                  today.
+                </h1>
+                <p class="lead">
+                  Boost your business with cutting-edge software solutions tailored
+                  to the needs of modern enterprises.
+                </p>
+                <a href="/about" class="btn btn-primary text-white">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="row w-100 p-4">
+    <div class="card p-0 friend-list">
+      <div class="card-header card-header-custom text-white">
+        What next?
+      </div>
+      <div class="card-body d-flex flex-wrap justify-content-start">
+        FINISH YOUR PROFILE...SEARCH FOR FRIENDS...SEARCH PEOPLE AT YOUR GYM
+      </div>
+    </div>
+  </div>
+  {{/with}}
+</div>
+<script src="/js/replaceme.min.js"></script>
+<script src="/js/replaceme.js"></script>

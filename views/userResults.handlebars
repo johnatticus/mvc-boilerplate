@@ -1,0 +1,52 @@
+<div class="container-fluid d-flex flex-wrap justify-content-evenly p-4">
+  <div class="row p-4">
+    <div class="col-xxl-3 mb-4">
+      <div class="card p-0">
+        <div class="card-header bg-success text-white">
+          Search Options
+        </div>
+        <div class="card-body">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div>
+          <div class="pt-4">
+            <select class="form-select" placeholder="Search by Gym" aria-label="Default select example">
+              <option disabled selected>Select A Gym</option>
+              <option value="1">24 Hour Fitness</option>
+              <option value="2">Anytime Fitness</option>
+              <option value="3">Crunch Fitness</option>
+              <option value="4">Curves International</option>
+              <option value="5">Equinox Fitness</option>
+              <option value="6">Esporta Fitness</option>
+              <option value="7">F45 Training</option>
+              <option value="8">Gold's Gym</option>
+              <option value="9">LA Fitness</option>
+              <option value="10">Orangetheory Fitness</option>
+              <option value="11">Planet Fitness</option>
+              <option value="12">Pure Barre</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-9">
+      <div class="card p-0">
+        <div class="card-header bg-success text-white">
+          Search Results
+        </div>
+
+        <div class="card-body d-flex flex-wrap justify-content-start">
+          <!-- Loop over each object in the users array from resultsRoutes.js to create a user card with the results -->
+          {{#each userList as |user|}}
+          {{> resultsCard }}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

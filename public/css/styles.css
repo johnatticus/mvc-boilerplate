@@ -1,0 +1,78 @@
+:root {
+  --primary: #2f9e61;
+  --secondary: #085028;
+}
+
+html,
+body {
+  /* width: 100vw;
+  height: 100vh;
+  margin: 0; */
+  /* scroll-snap-type: y mandatory; */
+  width: 100%;
+  background-color: #f4f4f4;
+  background-image: url(/images/seamless-dumbbell-pattern.jpg);
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+.navbar-custom {
+  border-bottom: solid #2f9e61 4px;
+}
+
+.custom-toggler {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.65)),
+    url('../images/woman-man-treadmill.jpg') top center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.footer-custom {
+  border-top: solid #2f9e61 4px;
+}
+
+/* .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+/* .sticky {
+  position: fixed;
+  min-width: 100%;
+  z-index: 1;
+} */
+
+/* #overlay {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0 0 0 0;
+  opacity: 1;
+  -webkit-transition: opacity 2.25s ease;
+  -moz-transition: opacity 10.25s ease;
+  transition: opacity 2.25s ease;
+}
+
+#box:hover #overlay {
+  opacity: 1;
+} */
+
+.navbar-brand img {
+  height: 100%;
+  margin-left: 20px;
+}
+
+.card-header-custom {
+  background: linear-gradient(90deg, rgba(47,158,97,1) 0%, rgba(7,78,39,1) 100%);
+}
+
+.modal-footer {
+  border: 0;
+  margin: 0.25rem;
+}
